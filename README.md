@@ -1,4 +1,4 @@
-# Star Wars GraphQL - React Project
+# Star Wars GraphQL - API Project
 
 Further in my learning of GraphQL, I've connected this Express GraphQL Server to the https://swapi.dev/ API for retrieving Star Wars character data.
 
@@ -8,19 +8,17 @@ First you'll need to clone the repository.
 
 ```
 # Use SSH (if set up)...
-git clone git@github.com:SeanCassiere/git@github.com:SeanCassiere/starwars-gql-cra-app-v1.git YOUR_FOLDER
+git clone git@github.com:SeanCassiere/starwars-gql-api-v1.git YOUR_FOLDER
 
 # ...or use HTTPS and switch remotes later.
-git clone https://github.com/SeanCassiere/git@github.com:SeanCassiere/starwars-gql-cra-app-v1.git YOUR_FOLDER
+git clone https://github.com/SeanCassiere/git@github.com:SeanCassiere/starwars-gql-api-v1.git YOUR_FOLDER
 ```
 
-Currently, the frontend is not yet setup.
-You can visit the Apollo playground by:
+Once the repo is cloned, be sure to setup your environment variables (`.env`) file. You can find out the data to be added in this file, by checking out the example file provided `.env.example`.
+
+After completing the steps above, you can run the server with the following command;
 
 ```
-# change into the server directory
-cd server
-
 # launch the server
 npm run server
 
@@ -28,3 +26,5 @@ or
 
 yarn run server
 ```
+
+Enjoy!
