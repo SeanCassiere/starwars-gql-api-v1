@@ -20,7 +20,11 @@ const SERVER_PORT = process.env.SERVER_PORT || 4000;
 app.use(cors());
 
 // Init Apollo Server
-const server = new ApolloServer({ typeDefs, resolvers, cors: true });
+const server = new ApolloServer({
+	typeDefs,
+	resolvers,
+	cors: true,
+});
 server.applyMiddleware({ app });
 
 // Listen Server
