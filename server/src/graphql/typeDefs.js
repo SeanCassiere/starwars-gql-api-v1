@@ -6,6 +6,26 @@ const typeDefs = gql`
 		authenticationError: String
 
 		getPerson(id: Int!): Person
+		getStarship(id: Int!): Starship
+		getPlanet(id: Int!): Planet
+	}
+
+	type Starship {
+		name: String
+		model: String
+		manufacturer: String
+		cost_in_credits: Int
+		length: Int
+		max_atmosphering_speed: Int
+		crew: Int
+		passengers: Int
+		cargo_capacity: Int
+		consumables: String
+		hyperdrive_rating: Float
+		MGLT: Int
+		starship_class: String
+		films: [Film]
+		pilots: [Person]
 	}
 
 	type Film {
@@ -28,6 +48,7 @@ const typeDefs = gql`
 		surface_water: Int
 		population: Int
 		films: [Film]
+		residents: [Person]
 	}
 
 	type Person {
@@ -41,6 +62,7 @@ const typeDefs = gql`
 		gender: String
 		films: [Film]
 		homeworld: Planet
+		starships: [Starship]
 	}
 `;
 
